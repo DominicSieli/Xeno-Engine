@@ -2,26 +2,27 @@
 
 namespace DataStructures
 {
-	template <typename T, unsigned long long S>
+	template <typename Type, unsigned long long Size>
 	class StaticArray
 	{
 	private:
-		T array[S];
+		Type array[Size];
+		unsigned long long index = 0;
 
 	public:
-		constexpr unsigned long long Size() const noexcept
-		{
-			return S;
-		}
-
-		T& operator[](unsigned long long index)
+		Type& Update()
 		{
 			return array[index];
 		}
 
-		constexpr T& operator[](unsigned long long index) const
+		void Iterate()
 		{
-			return array[index];
+			index++;
+
+			if(index > Size - 1)
+			{
+				index = 0;
+			}
 		}
 	};
 }
