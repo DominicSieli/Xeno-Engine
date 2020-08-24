@@ -1,20 +1,13 @@
-#include <iostream>
-
-#include "Entity.h"
-#include "Static_Array.h"
-
-unsigned long long i = 0;
-DataStructures::StaticArray<Entity::Entity, 10> entities;
+#include "Utilities.h"
+#include "Libraries.h"
+#include "Engine_Data.h"
+#include "Application_Data.h"
 
 int main()
 {
-    while(i < 10)
-    {
-        entities.Update().data = i;
-        std::cout << entities.Update().data << '\n';
-        i++;
-        entities.Iterate();
-    }
-
-    std::cin.get();
+	while(true)
+	{
+		#include "Engine_Systems.h"
+		#include "Application_Systems.h"
+	}
 }

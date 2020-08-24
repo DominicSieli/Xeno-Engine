@@ -4,6 +4,8 @@ namespace Entity
 {
 	struct Entity
 	{
-		unsigned long long data = 0;
+		unsigned int data = 0;
 	};
 }
+
+DataStructures::DynamicArray<Entity::Entity> entities(10);

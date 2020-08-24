@@ -12,7 +12,7 @@ namespace DataStructures
 
 	public:
 		DynamicArray(unsigned long long size = 0)
-			: array(new T[size]), size(size), count(0)
+			: array(new T[size]), size(size), count(size)
 		{
 
 		}
