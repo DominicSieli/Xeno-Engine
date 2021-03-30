@@ -1,4 +1,10 @@
-**/Scripts/
-**/File_IO/
-**/Binaries/
-**/Assembly/
+/*
+!LICENSE
+!.gitignore
+
+/*/
+!/Source/
+
+/Source/*
+!/Source/.h
+!/Source/.cpp
